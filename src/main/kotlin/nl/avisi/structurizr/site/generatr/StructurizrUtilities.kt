@@ -66,5 +66,5 @@ fun ViewSet.hasDynamicViews(softwareSystem: SoftwareSystem) =
     dynamicViews.any { it.softwareSystem == softwareSystem }
 
 fun ViewSet.hasDeploymentViews(softwareSystem: SoftwareSystem) = with(deploymentViews) {
-    any { it.softwareSystem == softwareSystem } || any { it.properties["generatr.view.belongsTo"] == softwareSystem.name }
+    any { it.softwareSystem == softwareSystem } || any { it.properties["generatr.view.deployment.belongsTo"] == softwareSystem.name }
 }
