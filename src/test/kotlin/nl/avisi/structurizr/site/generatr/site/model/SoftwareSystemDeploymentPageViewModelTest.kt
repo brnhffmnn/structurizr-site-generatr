@@ -79,7 +79,7 @@ class SoftwareSystemDeploymentPageViewModelTest : ViewModelTest() {
         val viewModel = SoftwareSystemDeploymentPageViewModel(
             generatorContext, generatorContext.workspace.model.addSoftwareSystem("Software system 3").also {
                 generatorContext.workspace.views.createDeploymentView("star-scoped", "Star Scoped Deployment View").apply {
-                    addProperty("generatr.view.belongsTo", it.name)
+                    addProperty("generatr.view.deployment.belongsTo", it.name)
                 }
             })
 
